@@ -1,0 +1,259 @@
+# Instincts generated from https://github.com/dyzmj/bytekit
+# Generated: 2026-06-07T17:02:25.795Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: bytekit-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/dyzmj/bytekit
+---
+
+# Bytekit Commit Length
+
+## Action
+
+Keep commit messages concise (~42 characters)
+
+## Evidence
+
+- Average commit message length: 42 chars
+- Based on 1 commits
+
+---
+id: bytekit-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/bytekit
+---
+
+# Bytekit Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: bytekit-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/bytekit
+---
+
+# Bytekit Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: bytekit-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/bytekit
+---
+
+# Bytekit Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: bytekit-instinct-class-naming
+trigger: "When creating a new Java class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: bytekit-instinct-function-naming
+trigger: "When defining a new Java function or method"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: bytekit-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: bytekit-instinct-file-naming
+trigger: "When creating a new Java file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct File Naming
+
+## Action
+
+Name the file using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: bytekit-instinct-import-style
+trigger: "When importing Java classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: bytekit-instinct-export-style
+trigger: "When exporting classes or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: bytekit-instinct-test-location
+trigger: "When adding a new test"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Test Location
+
+## Action
+
+Place the test in the same folder as the code (mixed location)
+
+## Evidence
+
+- Pattern in architecture.testLocation
+
+---
+id: bytekit-instinct-test-folder
+trigger: "When organizing core functionality tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Test Folder
+
+## Action
+
+Place them under the 'bytekit-core' folder
+
+## Evidence
+
+- Pattern in architecture.commonFolders
+
+---
+id: bytekit-instinct-commit-format
+trigger: "When writing a git commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: dyzmj/bytekit
+---
+
+# Bytekit Instinct Commit Format
+
+## Action
+
+Use a short, imperative, freeform message without a prefix
+
+## Evidence
+
+- Seen in commit 'Implement frame-aware line instrumentation'
+- Pattern in commits.prefixes (none)
+- Pattern in commits.averageLength (short)
+

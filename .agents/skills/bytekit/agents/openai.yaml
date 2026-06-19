@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bytekit"
+  short_description: "Repo-specific patterns and workflows for bytekit"
+  default_prompt: "Use the bytekit repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
